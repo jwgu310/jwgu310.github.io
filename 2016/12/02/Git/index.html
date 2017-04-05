@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="Git的使用配置使用人的账号和邮箱git config --global user.name zhufengzhufeng
+git config --global user.email xxxxx
+git config --list 查看所有配置
+mkdir 创建目录
+初始化gitgit init
+" />
+  
+
+  
+  
+  
+  
+  
+
+  <title>顾佳伟</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Git的使用配置使用人的账号和邮箱git config --global user.name zhufengzhufeng git config --global user.email xxxxx git config --list 查看所有配置 mkdir 创建目录 初始化gitgit init 初始化文件echo hello &amp;gt; index.txt       覆盖写入 echo hel">
+<meta name="keywords" content="2016年12月">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git入门知识详解">
+<meta property="og:url" content="http://yoursite.com/2016/12/02/Git/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Git的使用配置使用人的账号和邮箱git config --global user.name zhufengzhufeng git config --global user.email xxxxx git config --list 查看所有配置 mkdir 创建目录 初始化gitgit init 初始化文件echo hello &amp;gt; index.txt       覆盖写入 echo hel">
+<meta property="og:updated_time" content="2016-12-16T16:16:58.568Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Git入门知识详解">
+<meta name="twitter:description" content="Git的使用配置使用人的账号和邮箱git config --global user.name zhufengzhufeng git config --global user.email xxxxx git config --list 查看所有配置 mkdir 创建目录 初始化gitgit init 初始化文件echo hello &amp;gt; index.txt       覆盖写入 echo hel">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+  <!-- baidu webmaster push -->
+ <!-- <script src='//push.zhanzhang.baidu.com/push.js'></script>-->
+</head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/archives" title="Hexo" rel="home">首页</a>
+      </h1>
+    </hgroup>
+</header>
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-Git" class="post-Git post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title article-title">
+      Git入门知识详解
+    </h1>
+  
+
+        
+
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="Git的使用"><a href="#Git的使用" class="headerlink" title="Git的使用"></a>Git的使用</h1><h2 id="配置使用人的账号和邮箱"><a href="#配置使用人的账号和邮箱" class="headerlink" title="配置使用人的账号和邮箱"></a>配置使用人的账号和邮箱</h2><pre><code>git config --global user.name zhufengzhufeng
+git config --global user.email xxxxx
+git config --list 查看所有配置
+</code></pre><p>mkdir 创建目录</p>
+<h2 id="初始化git"><a href="#初始化git" class="headerlink" title="初始化git"></a>初始化git</h2><pre><code>git init
+</code></pre><h2 id="初始化文件"><a href="#初始化文件" class="headerlink" title="初始化文件"></a>初始化文件</h2><pre><code>echo hello &gt; index.txt       覆盖写入
+echo hello word &gt;&gt; index.txt 写入
+cat index.txt  查看文本里的内容
+</code></pre><blockquote>
+<p>一个大于号表示清空并写入 &gt;&gt; 表示 追加</p>
+</blockquote>
+<h2 id="删除文件rm"><a href="#删除文件rm" class="headerlink" title="删除文件rm"></a>删除文件rm</h2><h2 id="查看状态-git-status"><a href="#查看状态-git-status" class="headerlink" title="查看状态  git status"></a>查看状态  git status</h2><h2 id="将文件加入到暂存区中"><a href="#将文件加入到暂存区中" class="headerlink" title="将文件加入到暂存区中"></a>将文件加入到暂存区中</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git add file</div><div class="line">git add ./git add -A</div></pre></td></tr></table></figure>
+<h2 id="提交commit"><a href="#提交commit" class="headerlink" title="提交commit"></a>提交commit</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m&quot;first&quot;</div></pre></td></tr></table></figure>
+<h2 id="vi控制台"><a href="#vi控制台" class="headerlink" title="vi控制台"></a>vi控制台</h2><p>如果进入编辑模式可以i键进入插入模式</p>
+<ul>
+<li>i表示编辑</li>
+<li>退出esc + :wq</li>
+</ul>
+<h2 id="查看版本库信息"><a href="#查看版本库信息" class="headerlink" title="查看版本库信息"></a>查看版本库信息</h2><pre><code>git log --oneline 查看版本库信息
+git reflog   查看未来的版本
+</code></pre><h2 id="比较代码差异"><a href="#比较代码差异" class="headerlink" title="比较代码差异"></a>比较代码差异</h2><pre><code>git diff            比较工作区和暂存区的区别
+git diff master     比较工作区和版本库的区别
+git diff --cached   比较暂存区和版本库的区别
+</code></pre><h2 id="从暂存区删除本次的add"><a href="#从暂存区删除本次的add" class="headerlink" title="从暂存区删除本次的add"></a>从暂存区删除本次的add</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset HEAD &lt;file&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>取消本次的add</p>
+</blockquote>
+<h2 id="从缓存区-从历史区将代码覆盖掉工作区"><a href="#从缓存区-从历史区将代码覆盖掉工作区" class="headerlink" title="从缓存区 从历史区将代码覆盖掉工作区"></a>从缓存区 从历史区将代码覆盖掉工作区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">		git checkout &lt;file&gt;</div><div class="line">``` </div><div class="line"></div><div class="line">## 回到过去</div></pre></td></tr></table></figure>
+<p>git reset –hard commit_id/HEAD^^^^^^^/HEAD~6<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">## 分支</div><div class="line"></div><div class="line">	查看所有分支git branch </div><div class="line">	创建分支git branch dev</div><div class="line">	切换分支git checkout dev </div><div class="line">	创建并切换git checkout -b fixbug</div><div class="line">	删除分支git branch -d dev</div><div class="line">	合并分支git merge 分支名</div><div class="line"></div><div class="line">&gt; 在主干上拉取一条分支，在分支上进行开发，开发后，在主干上将代码进行合并，主干上目前没有人开发，</div><div class="line">可以使用快转的方式，将我们的指针直接指向到分支的最新装态 fast-forward</div><div class="line"></div><div class="line">## 在github上部署静态页</div><div class="line"></div><div class="line">需要将特定的内容推送到github上的gh-pages分支上</div><div class="line"></div><div class="line">- 创建一个gh-pages的分支</div></pre></td></tr></table></figure></p>
+<p>git checkout -b gh-pages<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">- 将代码commit 到这个分支上</div></pre></td></tr></table></figure></p>
+<p>git add .<br>git commit -m ‘ok’<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">- 连接远程仓库和本地仓库</div></pre></td></tr></table></figure></p>
+<p>git remote add aaa 地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">- 将代码推送到远程仓库上</div></pre></td></tr></table></figure></p>
+<p>git push aaa gh-pages<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">##合并分支产生冲突</div><div class="line"></div><div class="line">	git log --graph --oneline --decorate 查看</div><div class="line"></div><div class="line">## 合并分支产生冲突</div><div class="line"></div><div class="line">- 在主干的某个版本上进行分支开发，在分支上开发1.txt这个文件(drag)，在主干上也开发1.txt(limit),此时回到主干上合并时，会产生冲突，需要我们手动解决</div><div class="line"></div><div class="line">## 从工作区中提交到历史区</div></pre></td></tr></table></figure></p>
+<p>git commit -a -m’drag’<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## 解决冲突</div><div class="line">去掉&gt;&gt;&gt;&gt;&gt;&gt; ========  &lt;&lt;&lt;&lt;&lt;&lt;&lt; 保留需要的内容再次提交</div><div class="line"></div><div class="line">## 合并</div><div class="line">git rebase 变基</div><div class="line">git cherry-pick 精选</div><div class="line"></div><div class="line">## 显示结构</div></pre></td></tr></table></figure></p>
+<p>git log –graph –oneline –decorate<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## 创建忽略文件</div><div class="line"></div><div class="line">将项目提交到github上，需要在github上创建一个空的仓库</div><div class="line"></div><div class="line">## 添加远程仓库的连接</div></pre></td></tr></table></figure></p>
+<p>git remote add 名字  地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## 查看配置的所有配置的地址</div></pre></td></tr></table></figure></p>
+<p>git remote -v<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## 删除地址</div></pre></td></tr></table></figure></p>
+<p>git remote rm 名字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## upstream</div></pre></td></tr></table></figure></p>
+<p>-u 下次提交或者拉取代码可以直接git push 或者git pull<br>```</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2016/12/02/Git/">
+    <time datetime="2016-12-02T06:36:31.000Z" class="entry-date">
+        2016-12-02
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2016年12月/">2016年12月</a></li></ul>
+
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+        <span class="nav-previous"><a href="/2016/12/01/hello-world/" rel="prev"><span class="meta-nav">←</span> hexo 使用</a></span>
+    
+    
+        <span class="nav-next"><a href="/2016/12/14/jQuery/" rel="next">轻松掌握jQuery的使用 <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <!--
+<aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="搜索" />
+    </div>
+</form></aside>-->
+
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">最近的文章</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2017/04/05/vue/">vue概述</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/16/Flex/">Flex弹性盒子布局</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/15/webpack/">由浅入深了解webpack的使用</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/15/gulp/">gulp 的四个核心api</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/14/jQuery/">轻松掌握jQuery的使用</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-content">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2016年12月/">2016年12月</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/2017年04月/">2017年04月</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">云标签</h3>
+    <div class="widget-content tagcloud">
+      <a href="/tags/2016年12月/" style="font-size: 20px;">2016年12月</a> <a href="/tags/2017年04月/" style="font-size: 10px;">2017年04月</a>
+    </div>
+  </aside>
+
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2017 顾佳伟
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
