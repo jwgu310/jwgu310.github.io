@@ -43,6 +43,59 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
+    <article id="post-es6" class="post-es6 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2017/04/06/es6/">ES6的使用</a>
+    </h1>
+  
+
+        
+
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h1><h2 id="块级作用域"><a href="#块级作用域" class="headerlink" title="块级作用域"></a>块级作用域</h2><p>使用 let 定义的变量在大括号的外面是访问不到的</p>
+<h2 id="常量const-常量一旦赋值就不能再修改了"><a href="#常量const-常量一旦赋值就不能再修改了" class="headerlink" title="常量const  常量一旦赋值就不能再修改了"></a>常量const  常量一旦赋值就不能再修改了</h2><p>注意const限制的是不能给变量重新赋值，而变量的值本身是可以改变的,下面的操作是可以的</p>
+<h2 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h2><pre><code>let desc = `${name} is ${age} old!`;
+</code></pre><h2 id="剩余操作符"><a href="#剩余操作符" class="headerlink" title="剩余操作符"></a>剩余操作符</h2><p>   剩余操作符可以把其余的参数的值都放到一个叫b的数组里面</p>
+<pre><code> let rest = function(a,...b){
+ console.log(a,b);
+}
+ rest(1,2,3);    
+</code></pre><h2 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h2><p>   箭头函数简化了函数的的定义方式，一般以 “=&gt;” 操作符左边为输入的参数，而右边则是进行的操作以及返回的值inputs=&gt;output</p>
+<pre><code>[1,2,3].forEach(val =&gt; console.log(val)););
+</code></pre><p>   输入参数如果多于一个要用()包起来，函数体如果有多条语句需要用{}包起来<br>   箭头函数根本没有自己的this，导致内部的this就是外层代码块的this。 正是因为它没有this，从而避免了this指向的问题。</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2017/04/06/es6/">
+    <time datetime="2017-04-06T11:02:31.000Z" class="entry-date">
+        2017-04-06
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2017年04月/">2017年04月</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
     <article id="post-babel" class="post-babel post type-post status-publish format-standard hentry">
     <!---->
 
@@ -1001,6 +1054,10 @@ git diff --cached   比较暂存区和版本库的区别
       <ul>
         
           <li>
+            <a href="/2017/04/06/es6/">ES6的使用</a>
+          </li>
+        
+          <li>
             <a href="/2017/04/06/babel/">Babel的操作指南</a>
           </li>
         
@@ -1016,10 +1073,6 @@ git diff --cached   比较暂存区和版本库的区别
             <a href="/2016/12/15/webpack/">由浅入深了解webpack的使用</a>
           </li>
         
-          <li>
-            <a href="/2016/12/15/gulp/">gulp 的四个核心api</a>
-          </li>
-        
       </ul>
     </div>
   </aside>
@@ -1029,7 +1082,7 @@ git diff --cached   比较暂存区和版本库的区别
   <aside class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-content">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2016年12月/">2016年12月</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/2017年04月/">2017年04月</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2016年12月/">2016年12月</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/2017年04月/">2017年04月</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </aside>
 
